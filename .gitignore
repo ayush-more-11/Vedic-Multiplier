@@ -4,8 +4,8 @@
 *.hw/
 *.ip_user_files/
 *.runs/
-## *.sim/
-## *.srcs/
+*.sim/
+*.srcs/
 *.xpr
 *.jou
 *.log
