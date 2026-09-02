@@ -12,7 +12,7 @@
 *.str
 *.backup.*
 
-# Keep source files
+# Keep clean source files
 !src/
 !src/*.v
 
@@ -25,4 +25,3 @@
 # Repository files
 !README.md
 !LICENSE
-!.gitignore

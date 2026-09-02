@@ -1,0 +1,7 @@
+Time resolution is 1 ps
+a=0000 b=0000 -> cout=0 sum=0000
+a=0011 b=0010 -> cout=0 sum=0101
+a=0111 b=0101 -> cout=0 sum=1100
+a=1111 b=0001 -> cout=1 sum=0000
+a=1111 b=1111 -> cout=1 sum=1110
+$finish called at time : 50 ns : File "D:/Ayush/Xilinx/vedic_multiplier/vedic_multiplier.srcs/sim_1/new/smart_ripple_carry_adder_tb.v" Line 72
