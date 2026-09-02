@@ -1,4 +1,7 @@
-# Vivado generated/project files
+# =========================================================
+# Vivado generated files - KEEP LOCAL, DO NOT PUSH
+# =========================================================
+
 .Xil/
 *.cache/
 *.hw/
@@ -11,18 +14,43 @@
 *.log
 *.str
 *.backup.*
+*.wdb
+*.pb
 
-# Keep clean source files
+# =========================================================
+# Keep Verilog/SystemVerilog source files
+# =========================================================
+
 !src/
+!src/design/
 !src/design/*.v
-!src/tb/*.v  
+!src/design/*.sv
 
-# Keep simulation/result images
+!src/tb/
+!src/tb/*.v
+!src/tb/*.sv
+
+# =========================================================
+# Keep simulation/results
+# =========================================================
+
 !results/
 !results/*.jpg
 !results/*.jpeg
 !results/*.png
+!results/*.svg
 
+# =========================================================
+# Keep XDC constraints
+# =========================================================
+
+!src/design/*.xdc
+!src/design/**/*.xdc
+!src/**/*.xdc
+
+# =========================================================
 # Repository files
+# =========================================================
+
 !README.md
 !LICENSE
