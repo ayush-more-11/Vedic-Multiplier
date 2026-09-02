@@ -20,12 +20,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module HA(input x, y, output sum, carry);
-    assign sum = x ^ y;
-    assign carry = x & y;
-endmodule
-
-module Vedic_Multiplier(input [1:0] a, input [1:0] b, output [3:0] m);
+module vedic_multiplier(input [1:0] a, input [1:0] b, output [3:0] m);
     wire [2:0] w;
     wire c;
 
@@ -35,12 +30,12 @@ module Vedic_Multiplier(input [1:0] a, input [1:0] b, output [3:0] m);
     and a3(w[1], a[1], b[0]);
 
     // First half adder
-    HA HA_1(.x(w[0]), .y(w[1]), .sum(m[1]), .carry(c));
+    half_adder HA_1(.x(w[0]), .y(w[1]), .sum(m[1]), .carry(c));
 
     // Second partial product
     and a4(w[2], a[1], b[1]);
 
     // Second half adder
-    HA HA_2(.x(c), .y(w[2]), .sum(m[2]), .carry(m[3]));
+    half_adder HA_2(.x(c), .y(w[2]), .sum(m[2]), .carry(m[3]));
    
 endmodule

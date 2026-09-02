@@ -29,7 +29,7 @@ module Vedic_Multiplier_tb;
     wire [3:0] m;
 
     // Instantiate the Unit Under Test (UUT)
-    Vedic_Multiplier uut (
+    vedic_multiplier uut (
         .a(a),
         .b(b),
         .m(m)
