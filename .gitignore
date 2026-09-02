@@ -14,7 +14,8 @@
 
 # Keep clean source files
 !src/
-!src/*.v
+!src/design/*.v
+!src/tb/*.v  
 
 # Keep simulation/result images
 !results/
