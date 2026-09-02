@@ -12,7 +12,7 @@
 *.str
 *.backup.*
 
-# Keep clean source files
+# Keep source files
 !src/
 !src/*.v
 
